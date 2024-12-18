@@ -1,0 +1,3 @@
+# TEST 2 - A Small Full Stack App
+There was a "notavailabledependency" in the package.json that blocked the npm install because it was not in the registry, so I removed it, and the install worked.
+I didn't find the solution for the 404 errors, but I found that right now the application tries to access files without proxying, for example it tries to find main.js at http://35.89.214.68:8090/src/main.jsx, while it's actually at http://35.89.214.68:8090/proxy/5173/src/main.jsx.
